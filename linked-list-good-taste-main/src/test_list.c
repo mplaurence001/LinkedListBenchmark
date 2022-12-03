@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include "list.c"
 
-#define N 2000
+#define N 20000
 list_item * item;
 list l;
 
