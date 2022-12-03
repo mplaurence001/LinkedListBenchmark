@@ -4,8 +4,6 @@
 ESESC_BIN=${1:-../main/esesc}
 export ESESC_ReportFile="HelloC"
 export ESESC_BenchName="./linked-list-good-taste-main/src/test_list"
-#export ESESC_tradCORE_enableICache="false"
-#export ESESC_tradCORE_DL1="BigMem Memory"
 if [ -f $ESESC_BIN ]; then
   $ESESC_BIN 
 else
@@ -13,8 +11,6 @@ else
 fi
 
 ./scripts/report.pl -last
-
-#export ESESC_tradCORE_enableDCache="false" #Turn off Data Caches
 
 export ESESC_DL1_core_bsize="64*1024"
 export ESESC_PrivL2_core_bsize="64*1024"
